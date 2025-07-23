@@ -1,0 +1,325 @@
+metal_detected,ir_detected,rain_value,color_value,label
+1,0,4095,307,metal
+1,0,4095,313,metal
+1,0,4095,303,metal
+1,0,4095,314,metal
+1,0,4095,309,metal
+1,0,4095,300,metal
+1,0,4095,320,metal
+1,0,4095,326,metal
+1,0,4095,317,metal
+1,0,4095,314,metal
+1,0,4095,308,metal
+1,0,4095,309,metal
+1,0,4095,319,metal
+0,0,4095,321,metal
+1,0,4095,308,metal
+0,0,4095,303,metal
+1,0,4095,314,metal
+1,0,4095,324,metal
+1,0,4095,311,metal
+1,0,4095,312,metal
+1,0,4095,315,metal
+1,0,4095,311,metal
+1,0,4095,315,metal
+1,0,4095,316,metal
+1,0,4095,299,metal
+1,0,4095,300,metal
+1,0,4095,313,metal
+1,0,4095,308,metal
+1,0,4095,301,metal
+1,0,4095,301,metal
+0,0,4095,299,metal
+1,0,4095,303,metal
+1,0,4095,311,metal
+1,0,4095,303,metal
+1,0,4095,307,metal
+1,0,4095,309,metal
+1,0,4095,309,metal
+1,0,4095,312,metal
+1,0,4095,311,metal
+1,0,4095,318,metal
+1,0,4095,309,metal
+1,0,4095,298,metal
+1,0,4095,311,metal
+1,0,4095,305,metal
+1,0,4095,312,metal
+1,0,4095,307,metal
+1,0,4095,314,metal
+1,0,4095,302,metal
+1,0,4095,301,metal
+1,0,4095,297,metal
+1,0,4095,299,metal
+1,0,4095,293,metal
+1,0,4095,285,metal
+1,0,4095,303,metal
+1,0,4095,300,metal
+0,0,4095,288,metal
+1,0,4095,290,metal
+0,0,4095,300,metal
+0,0,4095,297,metal
+1,0,4095,287,metal
+1,0,4095,281,metal
+1,0,4095,291,metal
+1,0,4095,298,metal
+1,0,4095,290,metal
+1,0,4095,293,metal
+1,0,4095,298,metal
+1,0,4095,293,metal
+1,0,4095,295,metal
+1,0,4095,292,metal
+1,0,4095,291,metal
+0,1,4095,27,dry bio
+0,1,4095,27,dry bio
+0,1,4095,27,dry bio
+0,0,4095,167,dry bio
+0,1,4095,49,dry bio
+0,1,4095,51,dry bio
+0,1,4095,46,dry bio
+0,1,4095,45,dry bio
+0,0,4095,158,dry bio
+0,1,4095,74,dry bio
+0,1,4095,75,dry bio
+0,1,4095,56,dry bio
+0,1,4095,57,dry bio
+0,1,4095,39,dry bio
+0,1,4095,37,dry bio
+0,1,4095,37,dry bio
+0,1,4095,33,dry bio
+0,1,4095,30,dry bio
+0,1,4095,32,dry bio
+0,1,4095,31,dry bio
+0,1,4095,71,dry bio
+0,1,4095,62,dry bio
+0,1,4095,61,dry bio
+0,1,4095,60,dry bio
+0,1,4095,45,dry bio
+0,1,4095,40,dry bio
+0,1,4095,38,dry bio
+0,1,4095,40,dry bio
+0,1,4095,37,dry bio
+0,1,4095,38,dry bio
+0,1,4095,28,dry bio
+0,1,4095,28,dry bio
+0,1,4095,28,dry bio
+0,1,4095,31,dry bio
+0,1,4095,33,dry bio
+0,1,4095,33,dry bio
+0,1,4095,75,dry bio
+0,1,4095,91,dry bio
+0,1,4095,101,dry bio
+0,1,4095,72,dry bio
+0,1,4095,89,dry bio
+0,1,4095,106,dry bio
+0,1,4095,34,dry bio
+0,1,4095,34,dry bio
+0,1,4095,34,dry bio
+0,1,4095,64,dry bio
+0,1,4095,54,dry bio
+0,1,4095,60,dry bio
+0,1,4095,56,dry bio
+0,1,4095,40,dry bio
+0,1,4095,36,dry bio
+0,1,4095,31,dry bio
+0,1,4095,31,dry bio
+0,1,4095,30,dry bio
+0,1,4095,35,dry bio
+0,1,4095,32,dry bio
+0,1,4095,32,dry bio
+0,1,4095,32,dry bio
+0,1,4095,33,dry bio
+0,1,4095,32,dry bio
+0,1,4095,33,dry bio
+0,1,4095,26,dry bio
+0,1,4095,28,dry bio
+0,1,4095,37,dry bio
+0,1,4095,33,dry bio
+0,1,4095,34,dry bio
+0,1,4095,39,dry bio
+0,1,4095,41,dry bio
+0,1,4095,46,dry bio
+0,1,4095,43,dry bio
+0,1,4095,43,dry bio
+0,1,4095,43,dry bio
+0,1,4095,55,dry bio
+0,1,4095,42,dry bio
+0,1,4095,32,dry bio
+0,1,4095,29,dry bio
+0,1,4095,30,dry bio
+0,1,4095,30,dry bio
+0,1,4095,30,dry bio
+0,1,4095,29,dry bio
+0,1,4095,29,dry bio
+0,1,4095,31,dry bio
+0,1,4095,34,dry bio
+0,1,4095,26,dry bio
+0,1,4095,28,dry bio
+0,1,4095,29,dry bio
+0,1,4095,28,dry bio
+0,1,4095,122,dry nonbio
+0,1,4095,127,dry nonbio
+0,1,4095,124,dry nonbio
+0,1,4095,132,dry nonbio
+0,1,4095,175,dry nonbio
+0,1,4095,183,dry nonbio
+0,1,4095,178,dry nonbio
+0,1,4095,188,dry nonbio
+0,1,4095,183,dry nonbio
+0,1,4095,119,dry nonbio
+0,1,4095,126,dry nonbio
+0,1,4095,126,dry nonbio
+0,1,4095,128,dry nonbio
+0,1,4095,130,dry nonbio
+0,1,4095,131,dry nonbio
+0,1,4095,122,dry nonbio
+0,1,4095,132,dry nonbio
+0,1,4095,176,dry nonbio
+0,1,4095,171,dry nonbio
+0,1,4095,178,dry nonbio
+0,1,4095,206,dry nonbio
+0,1,4095,142,dry nonbio
+0,1,4095,155,dry nonbio
+0,1,4095,162,dry nonbio
+0,1,4095,160,dry nonbio
+0,1,4095,181,dry nonbio
+0,1,4095,66,dry nonbio
+0,1,4095,68,dry nonbio
+0,1,4095,65,dry nonbio
+0,1,4095,66,dry nonbio
+0,1,4095,65,dry nonbio
+0,1,4095,67,dry nonbio
+0,1,4095,128,dry nonbio
+0,1,4095,133,dry nonbio
+0,1,4095,145,dry nonbio
+0,1,4095,149,dry nonbio
+0,1,4095,144,dry nonbio
+0,1,4095,145,dry nonbio
+0,1,4095,97,dry nonbio
+0,1,4095,91,dry nonbio
+0,1,4095,89,dry nonbio
+0,1,4095,95,dry nonbio
+0,1,4095,86,dry nonbio
+0,1,4095,83,dry nonbio
+0,1,4095,85,dry nonbio
+0,1,4095,116,dry nonbio
+0,1,4095,108,dry nonbio
+0,1,4095,112,dry nonbio
+0,1,4095,107,dry nonbio
+0,1,4095,93,dry nonbio
+0,1,4095,198,dry nonbio
+0,1,4095,182,dry nonbio
+0,1,4095,182,dry nonbio
+0,1,4095,170,dry nonbio
+0,1,4095,250,dry nonbio
+0,1,4095,263,dry nonbio
+0,1,4095,267,dry nonbio
+0,1,4095,75,dry nonbio
+0,1,4095,77,dry nonbio
+0,1,4095,79,dry nonbio
+0,1,4095,78,dry nonbio
+0,1,4095,91,dry nonbio
+0,1,4095,103,dry nonbio
+0,1,4095,103,dry nonbio
+0,1,4095,144,dry nonbio
+0,1,4095,139,dry nonbio
+0,1,4095,139,dry nonbio
+0,1,4095,131,dry nonbio
+0,1,4095,110,dry nonbio
+0,1,4095,176,dry nonbio
+0,1,4095,170,dry nonbio
+0,1,4095,167,dry nonbio
+0,1,4095,171,dry nonbio
+0,1,4095,165,dry nonbio
+0,1,4095,164,dry nonbio
+0,1,4095,164,dry nonbio
+0,1,4095,103,dry nonbio
+0,1,4095,105,dry nonbio
+0,1,4095,110,dry nonbio
+0,1,4095,99,dry nonbio
+0,1,4095,94,dry nonbio
+0,1,4095,299,dry nonbio
+0,1,4095,293,dry nonbio
+0,1,4095,293,dry nonbio
+0,1,4095,288,dry nonbio
+0,1,4095,285,dry nonbio
+0,1,4095,286,dry nonbio
+0,1,4095,294,dry nonbio
+0,1,4095,292,dry nonbio
+0,1,4095,295,dry nonbio
+0,1,4095,288,dry nonbio
+0,1,4095,103,dry nonbio
+0,1,4095,112,dry nonbio
+0,1,4095,111,dry nonbio
+0,1,4095,112,dry nonbio
+0,1,4095,104,dry nonbio
+0,1,4095,112,dry nonbio
+0,1,4095,113,dry nonbio
+0,1,4095,101,dry nonbio
+0,1,4095,111,dry nonbio
+0,1,4095,112,dry nonbio
+0,1,921,301,wet
+0,1,987,302,wet
+0,1,912,302,wet
+0,1,1084,302,wet
+0,1,1185,310,wet
+0,1,1198,323,wet
+0,1,1237,323,wet
+0,1,1246,310,wet
+0,1,1264,300,wet
+0,1,1247,307,wet
+0,1,1256,306,wet
+0,1,1149,306,wet
+0,1,1190,316,wet
+0,1,1125,323,wet
+0,1,1294,323,wet
+0,1,1232,313,wet
+0,1,1203,313,wet
+0,1,1213,323,wet
+0,1,1145,319,wet
+0,1,1293,309,wet
+0,1,1267,309,wet
+0,1,1104,299,wet
+0,1,1205,301,wet
+0,1,1259,318,wet
+0,1,1203,330,wet
+0,1,1155,330,wet
+0,1,1203,330,wet
+0,1,1242,319,wet
+0,1,1127,314,wet
+0,1,1175,319,wet
+0,1,1150,328,wet
+0,1,1119,337,wet
+0,1,1165,332,wet
+0,1,1280,322,wet
+0,1,1147,320,wet
+0,1,1131,320,wet
+0,1,1274,322,wet
+0,1,1168,330,wet
+0,1,1182,332,wet
+0,1,1227,331,wet
+0,1,1221,315,wet
+0,1,1279,315,wet
+0,1,1264,318,wet
+0,1,1168,318,wet
+0,1,1137,319,wet
+0,1,1227,329,wet
+0,1,1067,333,wet
+0,1,1166,334,wet
+0,1,1056,320,wet
+0,1,1191,321,wet
+0,1,1115,320,wet
+0,1,1109,331,wet
+0,1,1200,339,wet
+0,1,1097,339,wet
+0,1,1109,325,wet
+0,1,1104,315,wet
+0,1,1124,315,wet
+0,1,1227,323,wet
+0,1,1140,339,wet
+0,1,1104,340,wet
+0,1,1140,327,wet
+0,1,1089,327,wet
+0,1,1131,314,wet
+0,1,1095,321,wet
+0,1,1168,322,wet
+0,1,1076,317,wet
