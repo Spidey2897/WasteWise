@@ -1,153 +1,158 @@
-# ♻️ WasteWise: Smart Waste Segregator for a Sustainable Future
+♻️ WasteWise: Smart Waste Segregator for a Sustainable Future
+WasteWise is an intelligent, sensor-based waste segregation system designed to classify and sort waste into four categories using affordable electronics and real-time processing. It supports sustainable waste management in retail and commercial spaces by automating initial waste handling and reducing manual sorting efforts.
 
-WasteWise is an intelligent, sensor-based waste segregation system designed to classify and sort waste into four categories using affordable electronics and real-time processing. It is aimed at supporting sustainable waste management in retail and commercial spaces by automating initial waste handling and reducing manual sorting efforts.
+🏁 Submitted for the Walmart Hackathon 2025 under the theme “Creating a Sustainable Future.”
 
-> 🏁 Submitted for the Walmart Hackathon 2025 under the theme “Creating a Sustainable Future.”
-
----
-
-## 🔍 Project Overview
-
+🔍 Project Overview
 WasteWise identifies and segregates waste into:
-- 🟠 Metal Waste
-- ⚪ Dry Biodegradable Waste
-- ⚫ Dry Non-Biodegradable Waste
-- 🔵 Wet Waste
 
-It leverages a combination of sensors and actuators to detect the type of waste and uses a stepper motor + servo combo to direct it to the appropriate bin — all without the need for AI or a camera!
+🟠 Metal Waste
 
----
+⚪ Dry Biodegradable Waste
 
-## 🧠 Features
+⚫ Dry Non-Biodegradable Waste
 
-- 🧲 Inductive Proximity Sensor for metal detection
-- 📦 IR Sensor + Color Sensor (TCS3200) for dry waste classification
-- 💧 Rain Sensor for detecting wet/moist waste
-- ⚙️ Stepper motor rotates bins based on type
-- 🧴 Servo flap drops waste
-- 🔔 Buzzer for audio feedback
-- 🔁 Returns to home position automatically
+🔵 Wet Waste
 
----
+It uses a machine learning model trained with Edge Impulse to classify sensor readings into one of the four categories. The ESP32 acts as the master device running the model, while the Arduino UNO collects sensor data and handles actuation.
 
-## 🧰 Hardware Used
+🧠 Features
+🧲 Inductive Proximity Sensor for metal detection
 
-| Component                     | Qty | Description                                     |
-|------------------------------|-----|-------------------------------------------------|
-| Arduino Uno                  | 1   | Microcontroller board                          |
-| TCS3200 Color Sensor         | 1   | For detecting white/black for dry waste         |
-| Inductive Proximity Sensor   | 1   | Detects metal presence                          |
-| IR Sensor (or IR Proximity)  | 1   | Detects presence of dry waste                   |
-| Rain Drop Sensor (Analog)    | 1   | Detects wet/moisture waste                      |
-| 28BYJ-48 Stepper Motor       | 1   | Controls bin rotation via ULN2003 driver        |
-| ULN2003 Driver Board         | 1   | Drives the stepper motor                        |
-| Servo Motor (SG90/5010)      | 1   | Opens and closes the waste flap                 |
-| Buzzer                       | 1   | Optional alert feedback                         |
-| 12V Adapter or USB Power     | 1   | Powers Arduino and components                   |
-| Jumper Wires, Breadboard     | —   | For connections                                 |
+📦 IR Sensor + Color Sensor (TCS3200) for dry waste classification
 
----
+💧 Rain Sensor (on ESP32) for detecting wet/moist waste
 
-## 📌 Circuit Connections
+🤖 Machine learning model (.zip from Edge Impulse) for real-time waste classification
 
-### Color Sensor (TCS3200)
+⚙️ Stepper motor rotates bins based on detected category
 
-| Pin     | Arduino |
-|---------|---------|
-| S0      | D2      |
-| S1      | D3      |
-| S2      | D4      |
-| S3      | D5      |
-| OUT     | D6      |
-| VCC     | 5V      |
-| GND     | GND     |
+🧴 Servo flap drops waste into selected bin
 
-### Other Inputs
+🔔 Buzzer for audio feedback
 
-| Component            | Pin      |
-|----------------------|----------|
-| Metal Sensor (OUT)   | D7       |
-| IR Sensor (OUT)      | D8       |
-| Rain Sensor (Analog) | A4       |
+🔁 Automatically resets to home position
 
-### Outputs
+📡 I2C communication between ESP32 (master) and Arduino UNO (slave)
 
-| Component            | Pin      |
-|----------------------|----------|
-| Servo                | D10      |
-| Buzzer               | D13      |
+🧰 Hardware Used
+Component	Qty	Description
+ESP32	1	Runs ML model, receives sensor data, controls logic
+Arduino Uno	1	Collects sensor data, receives bin commands, actuates hardware
+TCS3200 Color Sensor	1	For detecting white/black surface for dry waste
+Inductive Proximity Sensor	1	Detects metal presence
+IR Sensor (or IR Proximity)	1	Detects dry waste presence
+Rain Drop Sensor (Analog)	1	Connected to ESP32 to detect wet/moisture waste
+28BYJ-48 Stepper Motor	1	Rotates bin platform
+ULN2003 Driver Board	1	Drives the stepper motor
+Servo Motor (SG90/5010)	1	Opens/closes waste flap
+Buzzer	1	Plays tone per waste type
+Jumper Wires, Breadboard	—	For wiring
 
-### Stepper Motor (ULN2003 Driver)
+🔗 Connections
+UNO (Slave – Sensors + Actuators)
+Color Sensor (TCS3200):
 
-| ULN2003 IN | Arduino Analog Pin |
-|------------|--------------------|
-| IN1        | A0                 |
-| IN2        | A1                 |
-| IN3        | A2                 |
-| IN4        | A3                 |
+Pin	Arduino
+S0	D2
+S1	D3
+S2	D4
+S3	D5
+OUT	D6
+VCC	5V
+GND	GND
 
-Power ULN2003 with 5V and GND from Arduino or external 5V supply.
+Other Sensors (UNO Side):
 
----
+Component	Pin
+Metal Sensor (OUT)	D7
+IR Sensor (OUT)	D8
 
-## 💻 How It Works
+Outputs:
 
-1. Reads color value using TCS3200 sensor.
-2. Prioritizes detection in the order:
-   - Metal → Dry → Wet
-3. Based on detection:
-   - Rotates stepper motor to designated bin (0°, 90°, 180°, 270°)
-   - Opens servo flap
-   - Closes flap
-   - Returns motor to home position
-4. Buzzer gives audio feedback on detection.
+Component	Pin
+Servo	D10
+Buzzer	D13
 
----
+Stepper Motor via ULN2003:
 
-## 📂 Code Summary
+ULN2003 IN	Arduino Analog Pin
+IN1	A0
+IN2	A1
+IN3	A2
+IN4	A3
 
-- Includes servo & stepper control via `CheapStepper` and `Servo` libraries
-- Uses analog read for wet waste via rain sensor
-- Uses `pulseIn()` to determine color from TCS3200
-- Logic in loop handles detection and action based on priority
+I2C Connection:
 
----
+Line	ESP32 Pin	UNO Pin
+SDA	21	A4
+SCL	22	A5
+GND	GND	GND
 
-## 🎥 Demo Video
+Rain Sensor:
 
+Signal	ESP32 Pin
+AOUT	GPIO 34
+
+💻 How It Works
+Arduino UNO reads sensor values (metal, IR, color).
+
+ESP32 requests data from UNO via I2C and appends rain sensor value locally.
+
+ESP32 runs the Edge Impulse ML model to classify the waste type (Metal / Wet / Dry Bio / Dry Non-Bio).
+
+ESP32 sends the bin class number (0–3) back to UNO via I2C.
+
+UNO:
+
+Rotates stepper motor to correct bin angle
+
+Opens/closes servo flap
+
+Plays buzzer tone
+
+Returns motor to 0° position
+
+📂 Code Summary
+Master: ESP32 runs Edge Impulse model and handles I2C communication.
+
+Slave: Arduino UNO reads sensors and performs actuation on classification signal.
+
+No manual thresholds; waste type is classified via trained ML model from sensor patterns.
+
+🎥 Demo Video
 A 2-minute demonstration video has been submitted for the Walmart Hackathon.
 
----
+💡 Impact
+By automating waste segregation at the point of disposal, WasteWise:
 
-## 💡 Impact
+Reduces need for manual sorting
 
-By automating waste segregation at the initial point of collection, WasteWise:
-- Reduces manual labor
-- Promotes sustainable practices
-- Can be scaled to retail outlets, schools, offices, and urban smart bins
-- Is low-cost and beginner-friendly for IoT makers and eco-innovators
+Encourages waste stream separation at source
 
----
+Is scalable to smart retail, school, campus, and city bins
 
-## 🚀 Future Improvements
+Demonstrates how affordable sensors + edge ML can solve real-world sustainability problems
 
-- AI-based detection for mixed waste
-- LCD/OLED Display for waste category
-- Wireless data logging of waste type count
-- Solar-powered model
+🚀 Future Improvements
+Use a camera with TensorFlow Lite for mixed object recognition
 
----
+Add OLED screen to show waste type or status
 
-## 👥 Credits
+Log waste types via SD card or cloud
 
-- Project Name: WasteWise
-- Built by: [Your Team Name]
-- For: Walmart Hackathon 2025
-- Track: “Creating a Sustainable Future”
+Solar-powered upgrade
 
----
+BLE app for remote monitoring
 
-## 📜 License
+👥 Credits
+Project Name: WasteWise
 
-Open-source under MIT License. Feel free to fork, improve and deploy in your own way.
+Built by: Old School
 
+For: Walmart Hackathon 2025
+
+Track: “Creating a Sustainable Future”
+
+📜 License
+Open-source under MIT License. Fork, improve, or deploy your own smart bin today.
