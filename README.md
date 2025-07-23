@@ -140,7 +140,7 @@ Or check out the live working system by cloning the repo and uploading the code 
 ## 👥 Credits
 
 - Project Name: WasteWise  
-- Designed and built by: [Your Name or Team Name Here]  
+- Designed and built by: Brian Walter and Team Old School  
 - Inspired by: The need for better sustainable waste management
 
 ---
